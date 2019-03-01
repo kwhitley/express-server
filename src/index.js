@@ -42,14 +42,17 @@ app.use(favicon(path.join(__dirname, 'favicon.ico')))
 
 app.start = (options = {
   port: process.env.PORT || 3000,
+  client: true,
 }) => {
-  let { port } = options
-  // after all other middleware has been applied, add final catch all routes
-  // all other client requests that lack an extension redirected to client
-  app.get(/.*(?<!\.\w{1,4})$/, (req, res) => {
-    console.log('redirecting request for', req.path, 'to', clientPath + '/index.html')
-    res.sendFile('/index.html', { root: clientPath })
-  })
+  let { port, client } = options
+
+  // if client enabled (default), add catch all to route HTML5 paths to client index
+  if (client) {
+    app.get(/.*(?<!\.\w{1,4})$/, (req, res) => {
+      console.log('redirecting request for', req.path, 'to', clientPath + '/index.html')
+      res.sendFile('/index.html', { root: clientPath })
+    })
+  }
 
   // all unmatched get 404
   app.get('*', (req, res) => {

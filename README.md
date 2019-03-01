@@ -1,7 +1,14 @@
-# Arundo Express Starter
-**Purpose**: To give us a starting Express.js environment for new client side apps.
-[![Build Status via Travis CI](https://travis-ci.com/arundo/express-starter.svg?branch=develop)](https://travis-ci.com/arundo/express-starter)
----
+A simplified Express.js environment to serve server + client code.
+=======
+#### Supports Redis or built-in memory engine with auto-clearing.
+
+# Includes
+- [x] gzip compression
+- [x] body parsing for form data
+- [x] favicon serving
+- [x] sessions
+- [x] cookies
+- [ ] authentication
 
 # Installation
 ```bash

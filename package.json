@@ -1,0 +1,62 @@
+{
+  "name": "@arundo/express-starter",
+  "version": "1.0.0",
+  "description": "Quickstart kit for Arundo Node + Client apps",
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "main": "dist/index.js",
+  "target": "esnext",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "nyc mocha $(find '../src' -name '*.spec.js') --recursive --require babel-core/register",
+    "dev": "mocha $(find src -name '*.spec.js') --recursive --require babel-core/register --watch",
+    "docs": "jsdoc2md src/*.js > api.md",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "prebuild": "rm -rf dist",
+    "build": "babel src --ignore '**/*.spec.js' --out-dir dist -d",
+    "postbuild": "cp package.json README.md src/images/favicon.ico dist/",
+    "postpublish": "cp package.json ../package.json"
+  },
+  "author": "Kevin R. Whitley <kevin.whitley@arundo.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arundo/express-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arundo/express-starter/issues",
+    "email": "support@arundo.com"
+  },
+  "dependencies": {
+    "apicache": "^1.4.0",
+    "app-root-path": "^2.1.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "globby": "^9.0.0",
+    "heroku-ssl-redirect": "^0.0.4",
+    "isomorphic-fetch": "^2.2.1",
+    "serve-favicon": "^2.5.0",
+    "supergeneric": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chai-datetime": "^1.5.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.14.1",
+    "jsdoc-to-markdown": "^4.0.1",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0"
+  }
+}

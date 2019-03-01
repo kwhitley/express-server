@@ -16,7 +16,7 @@ yarn add @arundo/express-starter
    up the server directly, although you could always start it any other way
    you like.
 */
-import app from 'express-starter'
+import app from '@arundo/express-starter'
 
 app.start()
 ```
@@ -26,7 +26,7 @@ app.start()
 
 ###### index.js
 ```js
-import app from 'express-starter'
+import app from '@arundo/express-starter'
 import api from './api'
 
 app.use('/api', api)

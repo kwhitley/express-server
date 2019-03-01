@@ -1,6 +1,6 @@
 {
   "name": "@arundo/express-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quickstart kit for Arundo Node + Client apps",
   "engines": {
     "node": ">=11.0.0"

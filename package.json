@@ -1,6 +1,6 @@
 {
   "name": "@supergeneric/express-server",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Quickstart kit serving Express apps with all the usual settings",
   "engines": {
     "node": ">=8.0.0"
@@ -22,10 +22,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/supergeneric/express-server.git"
+    "url": "https://github.com/kwhitley/express-server.git"
   },
   "bugs": {
-    "url": "https://github.com/supergeneric/express-server/issues",
+    "url": "https://github.com/kwhitley/express-server/issues",
     "email": "krwhitley@gmail.com"
   },
   "keywords": [
@@ -38,7 +38,6 @@
     "cookies"
   ],
   "dependencies": {
-    "apicache": "^1.4.0",
     "app-root-path": "^2.1.0",
     "body-parser": "^1.18.3",
     "compression": "^1.7.3",
@@ -46,11 +45,8 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "globby": "^9.0.0",
     "heroku-ssl-redirect": "^0.0.4",
-    "isomorphic-fetch": "^2.2.1",
-    "serve-favicon": "^2.5.0",
-    "supergeneric": "^1.1.0"
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

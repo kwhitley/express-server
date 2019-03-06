@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Quickstart kit serving Express apps with all the usual settings",
   "engines": {
-    "node": ">=11.0.0"
+    "node": ">=8.0.0"
   },
   "main": "dist/index.js",
   "target": "esnext",

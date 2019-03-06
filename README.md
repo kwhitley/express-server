@@ -23,7 +23,7 @@ yarn add @supergeneric/express-server
    up the server directly, although you could always start it any other way
    you like.
 */
-import app from '@arundo/express-starter'
+import app from '@supergeneric/express-server'
 
 app.start()
 ```

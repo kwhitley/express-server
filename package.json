@@ -19,7 +19,7 @@
     "postpublish": "cp package.json ../package.json"
   },
   "author": "Kevin R. Whitley <krwhitley@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/supergeneric/express-server.git"

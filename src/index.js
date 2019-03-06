@@ -1,7 +1,5 @@
 require('dotenv').config()
 
-console.log('express-starter imported...')
-
 // include other main deps
 import express from 'express'
 import bodyParser from 'body-parser'
@@ -27,7 +25,7 @@ export default (config = {}) => {
   ]))
 
   app.use(session({
-    secret: 'Arundo eats real-world industrial problems for breakfast, lunch, and dinner. ' + new Date(),
+    secret: 'Puppies are the new secretness. ' + new Date(),
     resave: false,
     saveUninitialized: true,
   }))

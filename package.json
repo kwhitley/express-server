@@ -1,7 +1,7 @@
 {
-  "name": "@arundo/express-starter",
-  "version": "1.2.0",
-  "description": "Quickstart kit for Arundo Node + Client apps",
+  "name": "@supergeneric/express-server",
+  "version": "1.0.0",
+  "description": "Quickstart kit serving Express apps with all the usual settings",
   "engines": {
     "node": ">=11.0.0"
   },
@@ -18,15 +18,15 @@
     "postbuild": "cp package.json README.md src/images/favicon.ico dist/",
     "postpublish": "cp package.json ../package.json"
   },
-  "author": "Kevin R. Whitley <kevin.whitley@arundo.com>",
+  "author": "Kevin R. Whitley <krwhitley@gmail.com>",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arundo/express-starter.git"
+    "url": "https://github.com/supergeneric/express-server.git"
   },
   "bugs": {
-    "url": "https://github.com/arundo/express-starter/issues",
-    "email": "support@arundo.com"
+    "url": "https://github.com/supergeneric/express-server/issues",
+    "email": "krwhitley@gmail.com"
   },
   "dependencies": {
     "apicache": "^1.4.0",

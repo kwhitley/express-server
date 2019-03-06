@@ -28,6 +28,15 @@
     "url": "https://github.com/supergeneric/express-server/issues",
     "email": "krwhitley@gmail.com"
   },
+  "keywords": [
+    "express",
+    "server",
+    "starter",
+    "simple",
+    "compression",
+    "session",
+    "cookies"
+  ],
   "dependencies": {
     "apicache": "^1.4.0",
     "app-root-path": "^2.1.0",

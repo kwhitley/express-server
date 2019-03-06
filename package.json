@@ -1,6 +1,6 @@
 {
   "name": "@supergeneric/express-server",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Quickstart kit serving Express apps with all the usual settings",
   "engines": {
     "node": ">=8.0.0"
